@@ -306,6 +306,24 @@ img{
   flex-direction: column;
 }
 
+.calendly-inline-widget {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .calendly-inline-widget {
+    margin: 2rem auto;
+    width: 80%; /* Adjust width as needed */
+  }
+}
+
 .home__social-icon{
   width: max-content;
   font-size: 1.3rem;
