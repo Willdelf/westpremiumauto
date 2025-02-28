@@ -292,12 +292,13 @@ img{
 
 .home__img{
   position: absolute;
-  left: 650px;
-  bottom: 150px;
+  left: 700px;
+  bottom: 100px;
+  width: 100%;
 }
 
 .home__img img{
-  width: 240px;
+  width: 100%;
 }
 
 .home__social{
