@@ -614,6 +614,7 @@ img{
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 4px 6px rgba(170, 190, 205, .3);
+  word-wrap: break-word;
 }
 
 .contact__icon,
