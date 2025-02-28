@@ -530,6 +530,7 @@ img{
 .portfolio__img{
   width: 100%;
   transition: .4s;
+  border-radius: .5rem;
 }
 
 .portfolio__data{
