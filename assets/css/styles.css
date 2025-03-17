@@ -336,17 +336,18 @@ img{
 }
 
 /*BUTTONS*/
-.button{
-  display: inline-block;
-  background-color: var(--first-color);
-  color: var(--first-color-lighten);
-  padding: .75rem 1rem;
-  border-radius: .25rem;
-  transition: .3s;
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem; /* Button padding */
+    background-color: var(--first-color); /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
-.button:hover{
-  background-color: var(--first-color-dark)
+.button:hover {
+    background-color: var(--first-color-dark); /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
 .button-light{
@@ -394,6 +395,45 @@ img{
   width: 220px;
   border-radius: .5rem;
   margin: auto;
+}
+
+/* About Section */
+.about { /* Light background color */
+    padding: 4rem 0; /* Padding for top and bottom */
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 2rem; /* Gap between columns */
+    align-items: center; /* Center align items */
+}
+
+.about__data {
+    text-align: left; /* Align text to the left */
+}
+
+.about__description {
+    font-size: 1rem; /* Font size */
+    line-height: 1.6; /* Line height */
+    color: #333; /* Text color */
+}
+
+.about__img {
+    width: 100%; /* Full width */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media screen and (max-width: 768px) {
+    .about__container {
+        grid-template-columns: 1fr; /* Single-column layout on small screens */
+        text-align: center; /* Center align text on small screens */
+    }
+
+    .about__img {
+        margin-top: 2rem; /* Add margin on top for small screens */
+    }
 }
 
 /*===== QUALIFICATION =====*/
@@ -792,7 +832,7 @@ img{
   }
 
   .about__description{
-    text-align: initial;
+    
     padding-left: 1rem;
   }
 
@@ -844,4 +884,32 @@ img{
   .qualification__container{
     column-gap: 6rem;
   }
+}
+
+/* Instagram Section */
+.instagram {
+    padding-top: 6rem; /* Add padding to the top */ /* Light background color */
+    padding-bottom: 4rem; /* Padding for bottom */
+    text-align: center; /* Center align text */
+}
+
+.instagram__container {
+    display: flex;
+    justify-content: center; /* Center align items */
+    align-items: center;
+    flex-wrap: wrap; /* Wrap items */
+    gap: 2rem; /* Gap between items */
+}
+
+.instagram-media {
+    max-width: 540px;
+    width: 100%;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media screen and (max-width: 768px) {
+    .instagram__container {
+        flex-direction: column; /* Single-column layout on small screens */
+    }
 }
